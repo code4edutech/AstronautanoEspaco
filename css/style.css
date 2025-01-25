@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+  overflow: hidden;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.space {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #fff;
+  border-radius: 50%;
+  animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+.astronaut {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  margin: auto;
+}
+
+.helmet {
+  width: 120px;
+  height: 120px;
+  background: #e5e5e5;
+  border: 5px solid #cccccc;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.visor {
+  width: 90px;
+  height: 50px;
+  background: #1b263b;
+  border: 3px solid #333;
+  border-radius: 25px;
+  position: absolute;
+  top: 35px;
+  left: 15px;
+}
+
+.body {
+  position: absolute;
+  top: 130px;
+  left: 25px;
+  width: 100px;
+  height: 150px;
+  background: #e5e5e5;
+  border: 3px solid #cccccc;
+  border-radius: 10px;
+}
+
+.arms {
+  position: absolute;
+  top: 140px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arm {
+  width: 30px;
+  height: 80px;
+  background: #e5e5e5;
+  border: 3px solid #cccccc;
+  border-radius: 15px;
+}
+
+.legs {
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+.leg {
+  width: 30px;
+  height: 80px;
+  background: #e5e5e5;
+  border: 3px solid #cccccc;
+  border-radius: 15px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  color: #ffffff;
+}
